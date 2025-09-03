@@ -12,7 +12,7 @@ Pictures of some of the graphs:
 
 <img width="836" height="356" alt="Screenshot 2025-09-02 at 10 21 42 PM" src="https://github.com/user-attachments/assets/17a2f8f1-3fdc-4838-bc40-d2b1a4877fe3" />
 
-<img width="524" height="356" alt="Screenshot 2025-09-02 at 10 21 27 PM" src="https://github.com/user-attachments/assets/1aa58343-7520-4586-959a-96702acbbd8a" 
+<img width="524" height="356" alt="Screenshot 2025-09-02 at 10 21 27 PM" src="https://github.com/user-attachments/assets/1aa58343-7520-4586-959a-96702acbbd8a" />
   
 <img width="848" height="356" alt="Screenshot 2025-09-02 at 10 21 10 PM" src="https://github.com/user-attachments/assets/2d3fc186-fbc6-4f89-9341-8eb2e09e35e8" />
 
