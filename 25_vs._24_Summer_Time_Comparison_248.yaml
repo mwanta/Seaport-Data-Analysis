@@ -1,0 +1,113 @@
+slice_name: 25 vs. 24 Summer Time Comparison
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_line
+params:
+  datasource: 39__table
+  viz_type: echarts_timeseries_line
+  slice_id: 248
+  x_axis:
+    expressionType: SQL
+    label: Formatted Date
+    sqlExpression: '"Formatted Date"'
+  time_grain_sqla: P1D
+  x_axis_sort_asc: true
+  metrics:
+  - aggregate: MAX
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: SUM(Ticket Count)
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 853
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: column
+      type_generic: 0
+      uuid: 13077087-ae94-43aa-897a-ecf6ae2b87c3
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: MAX(SUM(Ticket Count))
+    optionName: metric_pumkxnlzkeq_wils4f06lb8
+    sqlExpression: null
+  groupby: []
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: Formatted Date
+    operator: TEMPORAL_RANGE
+    comparator: '2025-03-03 : 2025-07-21'
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_wivw0hea8xq_zcn92elqalb
+  order_desc: true
+  row_limit: 1000
+  truncate_metric: true
+  show_empty_columns: true
+  rolling_type: mean
+  rolling_periods: 7
+  min_periods: 7
+  time_compare:
+  - 1 year ago
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  x_axis_title_margin: 15
+  y_axis_title_margin: 30
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  time_shift_color: true
+  seriesType: line
+  only_total: true
+  opacity: 0.2
+  markerSize: 6
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  xAxisLabelInterval: auto
+  rich_tooltip: true
+  showTooltipTotal: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":39,"type":"table"},"force":false,"queries":[{"filters":[{"col":"Formatted
+  Date","op":"TEMPORAL_RANGE","val":"2025-03-03 : 2025-07-21"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[{"timeGrain":"P1D","columnType":"BASE_AXIS","expressionType":"SQL","label":"Formatted
+  Date","sqlExpression":"\"Formatted Date\""}],"metrics":[{"aggregate":"MAX","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"SUM(Ticket
+  Count)","description":null,"expression":null,"filterable":true,"groupby":true,"id":853,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"13077087-ae94-43aa-897a-ecf6ae2b87c3","verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"MAX(SUM(Ticket
+  Count))","optionName":"metric_pumkxnlzkeq_wils4f06lb8","sqlExpression":null}],"orderby":[[{"aggregate":"MAX","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"SUM(Ticket
+  Count)","description":null,"expression":null,"filterable":true,"groupby":true,"id":853,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"13077087-ae94-43aa-897a-ecf6ae2b87c3","verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"MAX(SUM(Ticket
+  Count))","optionName":"metric_pumkxnlzkeq_wils4f06lb8","sqlExpression":null},false]],"annotation_layers":[],"row_limit":1000,"series_columns":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":["1
+  year ago"],"post_processing":[{"operation":"pivot","options":{"index":["Formatted
+  Date"],"columns":[],"drop_missing_columns":false,"aggregates":{"MAX(SUM(Ticket Count))":{"operator":"mean"},"MAX(SUM(Ticket
+  Count))__1 year ago":{"operator":"mean"}}}},{"operation":"rolling","options":{"rolling_type":"mean","window":7,"min_periods":7,"columns":{"MAX(SUM(Ticket
+  Count))":"MAX(SUM(Ticket Count))","MAX(SUM(Ticket Count))__1 year ago":"MAX(SUM(Ticket
+  Count))__1 year ago"}}},{"operation":"flatten"}]}],"form_data":{"datasource":"39__table","viz_type":"echarts_timeseries_line","slice_id":248,"x_axis":{"expressionType":"SQL","label":"Formatted
+  Date","sqlExpression":"\"Formatted Date\""},"time_grain_sqla":"P1D","x_axis_sort_asc":true,"metrics":[{"aggregate":"MAX","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"SUM(Ticket
+  Count)","description":null,"expression":null,"filterable":true,"groupby":true,"id":853,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"13077087-ae94-43aa-897a-ecf6ae2b87c3","verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"MAX(SUM(Ticket
+  Count))","optionName":"metric_pumkxnlzkeq_wils4f06lb8","sqlExpression":null}],"groupby":[],"adhoc_filters":[{"expressionType":"SIMPLE","subject":"Formatted
+  Date","operator":"TEMPORAL_RANGE","comparator":"2025-03-03 : 2025-07-21","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_wivw0hea8xq_zcn92elqalb"}],"order_desc":true,"row_limit":1000,"truncate_metric":true,"show_empty_columns":true,"rolling_type":"mean","rolling_periods":7,"min_periods":7,"time_compare":["1
+  year ago"],"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"x_axis_title_margin":15,"y_axis_title_margin":30,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","time_shift_color":true,"seriesType":"line","only_total":true,"opacity":0.2,"markerSize":6,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","xAxisLabelInterval":"auto","rich_tooltip":true,"showTooltipTotal":true,"tooltipTimeFormat":"smart_date","y_axis_format":"SMART_NUMBER","truncateXAxis":true,"y_axis_bounds":[null,null],"extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 3d810cab-bbb9-4bb4-85cf-a592e26aa2fe
+version: 1.0.0
+dataset_uuid: 61f7c3ed-8e9b-4485-befa-1ba5fb87caa6
