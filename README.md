@@ -6,6 +6,8 @@ to the data sets to allow for better analysis.
 
 The results of these graphs were used to implement strategies to increase visitor attendance at the museum. 
 
+I was the sole contributor to this project. 
+
 Pictures of some of the graphs:
 
 <img width="836" height="356" alt="Screenshot 2025-09-02 at 10 21 52 PM" src="https://github.com/user-attachments/assets/bdde93f3-1c4e-4a9f-bf70-4bdb31b13e63" />
