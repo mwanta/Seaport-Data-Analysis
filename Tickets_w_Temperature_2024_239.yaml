@@ -1,0 +1,146 @@
+slice_name: Tickets w/ Temperature 2024
+description: null
+certified_by: null
+certification_details: null
+viz_type: mixed_timeseries
+params:
+  datasource: 35__table
+  viz_type: mixed_timeseries
+  slice_id: 239
+  x_axis:
+    expressionType: SQL
+    label: Days in Date
+    sqlExpression: CAST(CAST("Days in Date" AS VARCHAR) AS DATE)
+    datasourceWarning: false
+  time_grain_sqla: P1D
+  metrics:
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      changed_on: '2025-07-25T23:01:31.545695'
+      column_name: ticket_count
+      created_on: '2025-07-25T23:01:31.545694'
+      description: null
+      expression: null
+      extra: null
+      filterable: true
+      groupby: true
+      id: 822
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: column
+      type_generic: 0
+      uuid: 331b8e44-f121-45d6-9008-8b9468e905da
+      verbose_name: null
+    aggregate: SUM
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: SUM(ticket_count)
+    optionName: metric_13khiyjamtqo_acsoak1dcav
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: null
+    datasourceWarning: false
+    expressionType: SQL
+    filterOptionName: filter_l6xrec1no7h_ams5snmmvmr
+    isExtra: false
+    isNew: false
+    operator: null
+    sqlExpression: '"Days in Date" >= 20240000
+
+      AND
+
+      "Days in Date" < 20250000'
+    subject: null
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  rolling_type: mean
+  rolling_periods: 7
+  min_periods: 7
+  time_compare: []
+  comparison_type: values
+  metrics_b:
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      changed_on: '2025-07-25T23:01:31.545713'
+      column_name: temperature
+      created_on: '2025-07-25T23:01:31.545712'
+      description: null
+      expression: null
+      extra: null
+      filterable: true
+      groupby: true
+      id: 824
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: column
+      type_generic: 0
+      uuid: 769644ca-43d6-4e11-ba4a-f6a49fcb4935
+      verbose_name: null
+    aggregate: SUM
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: SUM(temperature)
+    optionName: metric_np4jpt4pcv_flhyj8j30i
+  groupby_b: []
+  adhoc_filters_b: []
+  order_desc_b: true
+  row_limit_b: 10000
+  truncate_metric_b: true
+  rolling_type_b: mean
+  rolling_periods_b: 7
+  min_periods_b: 7
+  comparison_type_b: values
+  annotation_layers: []
+  x_axis_title_margin: 15
+  y_axis_title_margin: 30
+  y_axis_title_position: Left
+  color_scheme: supersetColors
+  seriesType: line
+  opacity: 0.2
+  markerSize: 6
+  sort_series_type: sum
+  seriesTypeB: line
+  areaB: false
+  opacityB: 0.2
+  markerSizeB: 6
+  yAxisIndexB: 1
+  sort_series_typeB: sum
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  xAxisLabelInterval: auto
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds_secondary:
+  - 10
+  - 85
+  y_axis_format_secondary: SMART_NUMBER
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":35,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"time_grain_sqla":"P1D","having":"","where":"(\"Days
+  in Date\" >= 20240000\nAND\n\"Days in Date\" < 20250000)"},"applied_time_extras":{},"columns":[{"timeGrain":"P1D","columnType":"BASE_AXIS","expressionType":"SQL","label":"Days
+  in Date","sqlExpression":"CAST(CAST(\"Days in Date\" AS VARCHAR) AS DATE)","datasourceWarning":false}],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-07-25T23:01:31.545695","column_name":"ticket_count","created_on":"2025-07-25T23:01:31.545694","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":822,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"331b8e44-f121-45d6-9008-8b9468e905da","verbose_name":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(ticket_count)","optionName":"metric_13khiyjamtqo_acsoak1dcav"}],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["Days
+  in Date"],"columns":[],"aggregates":{"SUM(ticket_count)":{"operator":"mean"}},"drop_missing_columns":true}},{"operation":"rolling","options":{"rolling_type":"mean","window":7,"min_periods":7,"columns":{"SUM(ticket_count)":"SUM(ticket_count)"}}},{"operation":"flatten"}],"orderby":[[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-07-25T23:01:31.545695","column_name":"ticket_count","created_on":"2025-07-25T23:01:31.545694","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":822,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"331b8e44-f121-45d6-9008-8b9468e905da","verbose_name":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(ticket_count)","optionName":"metric_13khiyjamtqo_acsoak1dcav"},false]]},{"filters":[],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[{"timeGrain":"P1D","columnType":"BASE_AXIS","expressionType":"SQL","label":"Days
+  in Date","sqlExpression":"CAST(CAST(\"Days in Date\" AS VARCHAR) AS DATE)","datasourceWarning":false}],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-07-25T23:01:31.545713","column_name":"temperature","created_on":"2025-07-25T23:01:31.545712","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":824,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"769644ca-43d6-4e11-ba4a-f6a49fcb4935","verbose_name":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(temperature)","optionName":"metric_np4jpt4pcv_flhyj8j30i"}],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["Days
+  in Date"],"columns":[],"aggregates":{"SUM(temperature)":{"operator":"mean"}},"drop_missing_columns":true}},{"operation":"rolling","options":{"rolling_type":"mean","window":7,"min_periods":7,"columns":{"SUM(temperature)":"SUM(temperature)"}}},{"operation":"flatten"}],"orderby":[[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-07-25T23:01:31.545713","column_name":"temperature","created_on":"2025-07-25T23:01:31.545712","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":824,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"769644ca-43d6-4e11-ba4a-f6a49fcb4935","verbose_name":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(temperature)","optionName":"metric_np4jpt4pcv_flhyj8j30i"},false]]}],"form_data":{"datasource":"35__table","viz_type":"mixed_timeseries","slice_id":239,"x_axis":{"expressionType":"SQL","label":"Days
+  in Date","sqlExpression":"CAST(CAST(\"Days in Date\" AS VARCHAR) AS DATE)","datasourceWarning":false},"time_grain_sqla":"P1D","metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-07-25T23:01:31.545695","column_name":"ticket_count","created_on":"2025-07-25T23:01:31.545694","description":null,"expression":null,"extra":null,"filterable":true,"groupby":true,"id":822,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":0,"uuid":"331b8e44-f121-45d6-9008-8b9468e905da","verbose_name":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(ticket_count)","optionName":"metric_13khiyjamtqo_acsoak1dcav"}],"groupby":[],"adhoc_filters":[{"clause":"WHERE","comparator":null,"datasourceWarning":false,"expressionType":"SQL","filterOptionName":"filter_l6xrec1no7h_ams5snmmvmr","isExtra":false,"isNew":false,"operator":null,"sqlExpression":"\"Days
+  in Date\" >= 20240000\nAND\n\"Days in Date\" < 20250000","subject":null}],"order_desc":true,"row_limit":10000,"truncate_metric":true,"rolling_type":"mean","rolling_periods":7,"min_periods":7,"time_compare":[],"comparison_type":"values","annotation_layers":[],"x_axis_title_margin":15,"y_axis_title_margin":30,"y_axis_title_position":"Left","color_scheme":"supersetColors","seriesType":"line","opacity":0.2,"markerSize":6,"sort_series_type":"sum","seriesTypeB":"line","areaB":false,"opacityB":0.2,"markerSizeB":6,"yAxisIndexB":1,"sort_series_typeB":"sum","show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","xAxisLabelInterval":"auto","rich_tooltip":true,"tooltipTimeFormat":"smart_date","truncateXAxis":true,"y_axis_bounds":[null,null],"y_axis_format":"SMART_NUMBER","y_axis_bounds_secondary":[10,85],"y_axis_format_secondary":"SMART_NUMBER","extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 013b9f54-7fee-4fb0-b1ce-37ea55648261
+version: 1.0.0
+dataset_uuid: 7432a477-e63b-48f2-a2b5-9e9857267e71
